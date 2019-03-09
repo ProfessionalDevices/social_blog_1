@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block head_title %} {{ block.super }} | Logout{% endblock head_title %}
+
+{% block content %}
+    <h2>Hai effettuato il log out</h2>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+          <a href="{% url 'login' %}">Accedi di nuovo</a>
+        </small>
+    </div>
+
+{% endblock content %}
